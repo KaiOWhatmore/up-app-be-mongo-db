@@ -1,4 +1,4 @@
-package com.up.upappbemongodb;
+package com.up.upappbemongodb.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "transactions")
-public class TransactionsVerbose {
+public class Transactions {
 
     @Id
     private String documentId;

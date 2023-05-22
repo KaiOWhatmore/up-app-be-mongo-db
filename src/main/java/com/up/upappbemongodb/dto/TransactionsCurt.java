@@ -1,4 +1,4 @@
-package com.up.upappbemongodb;
+package com.up.upappbemongodb.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,9 +15,15 @@ import java.util.Arrays;
 @NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "transactions")
-public class Transactions {
+public class TransactionsCurt {
     @Id
     private String id;
+
+    @Field("runningTotalDouble")
+    private Double runningTotalDouble;
+
+    @Field("runningTotalInteger")
+    private Integer runningTotalInteger;
 
     @Field("type")
     private String transactionType;
